@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valuto | Artista Uruguayo</title>
+    <script src='https://cdn.tailwindcss.com'></script>
+    <script src='https://kit.fontawesome.com/cea33d77ef.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/media/originals-logo.png" type="image/x-icon">
+</head>
+
+<body class="bg-slate-950 w-full p-0 m0">
+
+    <header class="h-16 bg-black w-full">
+        <div class="menu-mobile flex md:hidden h-full w-full justify-between px-4">
+            <img src="assets/media/gaceta.png" alt="Gaceta" class="gaceta h-full">
+
+            <button id="menu" class="flex text-white items-center justify-center text-3xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            
+            <!-- Menú desplegable -->
+            <div id="menuNav" class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex flex-col items-center justify-center space-y-6 text-white text-2xl">
+                <div class="div w-10/12 flex items-start justify-center h-full flex-col gap-4">
+                    <a href="#home">Inicio</a>
+                    <a href="#info">Informacion</a>
+                    <a href="webs/lyrics.html">Letras</a>
+                    <a target="_blank" href="https://open.spotify.com/intl-es/album/0T6DKrdEYhsU85YiSn3S3T">Flashes</a>
+                    <a href="#">Contacto</a>
+                    <div class="div flex items-center justify-end w-full">
+                        <button id="cerrarMenu" class="text-3xl mt-4">✖</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-pc hidden md:flex w-full h-full px-4 items-center justify-between">
+            <nav class="navigation-header h-full flex items-center justify-start gap-8 text-2xl text-gray-300"
+                style="width: 33%">
+                <!-- <a href="#" class="ml-4">Inicio</a>
+                <a href="#" class="ml-4">Flashes</a>
+                <a href="#" class="ml-4">Historia</a>
+                <a href="#" class="ml-4">Productores</a> -->
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </nav>
+
+            <picture class="flex items-center justify-center h-full" style="width: 33%;">
+                <img src="assets/media/gaceta.png" alt="Gaceta" class="gaceta h-full">
+            </picture>
+
+            <nav class="redes h-full flex items-center justify-end gap-8 text-2xl text-gray-300" style="width: 33%;">
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-spotify"></i></a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="home" class="cont w-full bg-slate-300">
+        <section class="pc-container w-full h-full flex items-center justify-between">
+            <div class="aside-valuto h-full w-4/6 bg-slate-500">
+                <div class="flashes-text w-full flex items-center h-full justify-end flex-col">
+                    <a target="_blank" href="https://tickets.latangente.com.ar/musica/valuto"
+                        class="mb-12 text-white bg-blue-800 text-md md:text-2xl py-3 px-4 md:py-5 md:px-12 rounded-xl md:rounded-full font-medium hover:bg-blue-900">Comprar Entrada Tangente <span class="text-cyan -300"><i class="fa-brands fa-spotify"></i></span></a>
+                </div>
+            </div>
+
+            <div class="aside-gaceta w-2/6 h-full bg-black flex items-center justify-center">
+                <img src="assets/media/gaceta.png" alt="" class="w-full">
+            </div>
+        </section>
+    </div>
+
+    <div class="valuto w-full bg-slate-950 hidden md:flex items-center justify-center relative">
+        <h2 class="text-7xl md:text-9xl font-montserrat-italic font-black text-cyan-800 relative z-10">
+            VALUTO
+        </h2>
+    </div>
+    
+
+    <section class="flashes min-h-screen w-full bg-slate-950 hidden md:flex items-center justify-center">
+        <div class="bento-grid w-10/12 ">
+
+            <div class="grid grid-cols-4 grid-rows-3 gap-4 h-full">
+                <div class="cuatro rounded-xl bg-slate-50 col-span-2 col-start-2 row-start-1"></div>
+                <div class="cinco rounded-xl bg-slate-50 row-span-2 col-start-1 row-start-2"></div>
+                <div class="seis rounded-xl bg-slate-50 col-span-2 col-start-2 row-start-2"></div>
+                <div class="siete rounded-xl bg-slate-50 col-span-2 col-start-2 row-start-3"></div>
+                <div class="ocho rounded-xl bg-slate-50 col-start-1 row-start-1"></div>
+                <div class="nueve rounded-xl bg-slate-50 row-span-2 col-start-4 row-start-1"></div>
+                <div class="diez rounded-xl bg-slate-50 col-start-4 row-start-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="origygac w-full bg-slate-950 flex items-center justify-center overflow-hidden relative">
+        <img src="assets/media/ori-gac-azul-large.png" alt="" class="h-full opacity-90 relative">
+    </div>
+    
+
+    <section id="sobremi" class="bg-slate-100 min-h-screen w-full flex items-start justify-center overflow-hidden">
+        <div class="content w-full md:w-9/12 h-full flex items-center justify-center relative mt-12 mb-12 gap-8">
+            <img src="assets/media/blob.svg" class="blob">
+            <img src="assets/media/blob.svg" class="blob2">
+            <!-- <img src="assets/media/blob.svg" class="blob3"> -->
+
+            <div class="image-info hidden w-5/12 md:flex items-center justify-start bg-red-600 rounded-md" style="height: 90vh;">
+            </div>
+
+
+            <div id="info" class="info w-10/12 md:w-7/12 flex flex-col items-start justify-between h-full ">
+            <h2 class="font-bricolage text-4xl font-black text-blue-900 mb-2">Información sobre Valuto</h2>
+
+
+                <!-- Info -->
+                <h5 class="text-2xl font-bricolage font-bold text-blue-900 mt-4">Introducción</h5>
+                <p class="text-lg text-gray-700 font-poppins font-normal w-full"><b>Valentín Ibarburu</b>, más conocido como
+                    <b>Valuto</b>, nació en <b>Montevideo, Uruguay</b>, el <b>7 de agosto de 2007</b>. Es
+                    hijo del guitarrista <b>Nicolás Ibarburu</b> y de la actriz y conductora <b>Noelia Campo</b></p>
+                
+
+                <h5 class="text-2xl font-bricolage font-bold text-blue-900 mt-4">¿Como empezó?</h5>
+                <p class="text-lg text-gray-700 font-poppins font-normal w-full">Su primer tema fue <b>"Confiesalo"</b>, una
+                    colaboración con <b>Saenzzz</b> que salió el <b>23 de abril de 2022</b>.
+                    Después de este estreno, el 29 de octubre de ese mismo año, lanzó <b>"Vida de Rock"</b> junto a <b>Saenzzz</b> y
+                    <b>Galo</b>, ambos del grupo <b>Originals</b>, al cual Valuto también forma parte.</p>
+                
+                <h5 class="text-2xl font-bricolage font-bold text-blue-900 mt-4">¿Como se creó Originals?</h5>
+                <p class="text-lg text-gray-700 font-poppins font-normal full">Originals nació el <b>19 de enero de 2022</b> en la <b>Rambla de Punta Carretas</b> con <b>Saenzzz, Fefo y RicoIDB</b>. Valuto se unió por su amistad con Saenzzz. El <b>18 de febrero de 2022</b>, <b>Galo</b> lanzó su álbum <b>Artista</b>, lo que llevó a Saenzzz a ficharlo para Originals. Luego, <b>JMP</b>, un <b>freestyler</b>, se unió como el último miembro</p>
+               
+                <!-- Redes -->
+                <h5 class="text-2xl font-bricolage font-bold text-blue-900 mt-4">Redes</h5>
+
+                <nav class="flex items-center justify-between w-full md:w-8/12">
+                    <a target="_blank" href="https://www.youtube.com/@valuto3099"
+                        class="text-4xl text-blue-900 w-16 flex items-center justify-center rounded-full h-16 hover:bg-blue-900 hover:text-gray-100 transition duration-300"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a target="_blank" href="https://x.com/v4luto"
+                        class="text-4xl text-blue-900 w-16 flex items-center justify-center rounded-full h-16 hover:bg-blue-900 hover:text-gray-100 transition duration-300"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a target="_blank" href="https://open.spotify.com/intl-es/artist/0AQym39jmsVTiggRZdyiSW"
+                        class="text-4xl text-blue-900 w-16 flex items-center justify-center rounded-full h-16 hover:bg-blue-900 hover:text-gray-100 transition duration-300"><i
+                            class="fa-brands fa-spotify"></i></a>
+                    <a target="_blank" href="https://www.tiktok.com/v4luto"
+                        class="text-4xl text-blue-900 w-16 flex items-center justify-center rounded-full h-16 hover:bg-blue-900 hover:text-gray-100 transition duration-300"><i
+                            class="fa-brands fa-tiktok"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/v4luto"
+                        class="text-4xl text-blue-900 w-16 flex items-center justify-center rounded-full h-16 hover:bg-blue-900 hover:text-gray-100 transition duration-300"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </nav>
+            </div>
+            <img src="assets/img/Shape.png" alt="asd" class="absolute bottom-0 left-0 w-3/6 -z-10 opacity-10">
+
+        </div>
+    </section>
+
+    <div class="valuto w-full bg-slate-950 flex items-center justify-center relative">
+        <h2 class="text-7xl md:text-9xl font-montserrat-italic font-black text-cyan-800 relative z-10">
+            FLASHES
+        </h2>
+    </div>
+
+    <!-- <div class="divisor w-full flex items-center justify-between gap-4">
+        <div class="image-info w-2/6">
+            <img src="assets/media/telefono.jpg" class="rounded-md w-full object-cover" alt="">
+        </div>
+        <div class="div text-info w-4/6">
+            <h5 class="text-2xl font-bold text-blue-700 mt-4">Introduccion</h5>
+            <p class="text-lg text-gray-700 font-poppins font-normal w-11/12">Valentín Ibarburu, más conocido como Valuto, nació en Montevideo, Uruguay, el 7 de agosto de 2007. Es
+                hijo del guitarrista Nicolás Ibarburu y de la actriz y conductora Noelia Campo. Aunque Valuto siempre
+                estuvo interesado en la música, no fue hasta que sus amigos le insistieron que comenzara a compartir sus
+                canciones que decidió lanzarse a la escena musical.</p>
+                <br>
+            </div>
+    </div> -->
+<script src="assets/js/main.js"></script>
+
+
+    
+</body>
+
+</html>
