@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valuto | Artista Uruguayo</title>
+    <script src='https://cdn.tailwindcss.com'></script>
+    <script src='https://kit.fontawesome.com/cea33d77ef.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="shortcut icon" href="../assets/media/originals-logo.png" type="image/x-icon">
+</head>
+
+<body class="bg-gray-50 w-full p-0 m0 min-h-screen flex flex-col items-center justify-between">
+
+    <header class="h-16 bg-black w-full">
+        <div class="menu-mobile flex md:hidden h-full w-full justify-between px-4">
+            <img src="../assets/media/gaceta.png" alt="Gaceta" class="gaceta h-full">
+
+            <button id="menu" class="flex text-white items-center justify-center text-3xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Menú desplegable -->
+            <div id="menuNav"
+                class="hidden fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 flex flex-col items-center justify-center space-y-6 text-white text-2xl">
+                <div class="div w-10/12 flex items-start justify-center h-full flex-col gap-4">
+                    <a href="../index.html#home">Inicio</a>
+                    <a href="../index.html#info">Informacion</a>
+                    <a href="lyrics.html">Letras</a>
+                    <a target="_blank" href="https://open.spotify.com/intl-es/album/0T6DKrdEYhsU85YiSn3S3T">Flashes</a>
+                    <a href="#">Contacto</a>
+                    <div class="div flex items-center justify-end w-full">
+                        <button id="cerrarMenu" class="text-3xl mt-4">✖</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="cont-album w-full flex items-start justify-start flex-col gap-4 ">
+            <div class="w-full  flex items-center justify-start gap-4 mt-4 ml-4">
+
+                <div class="portada-div w-16 bg-black h-16 rounded-full overflow-hidden">
+                    <img src="../assets/media/valuto.jpg" alt="" class="">
+                </div>
+                <div class="portada-text font-montserrat w-3/6">
+                    <h2 class="text-md">Valuto</h2>
+                </div>
+            </div>
+            <h2 class="text-3xl ml-4 font-bricolage font-black text-blue-900 mb-4">Todas las Canciones</h2>
+        </section>
+
+        <hr>
+
+        <section class="canciones w-full mt-4 flex items-center justify-center">
+            <div class="cont-canciones w-11/12 items-center justify-center flex flex-col gap-4">
+                <a href="" id="canciones-lista" class="canciones-lista w-full h-20 flex items-center flex-col justify-start gap-4">
+                    
+                </a>
+            </div>
+        </section>
+
+        <script src="../assets/js/lyrics.js"></script>
+        <script src="../assets/js/main.js"></script>
+
+
+
+
+</body>
+
+</html>
